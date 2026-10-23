@@ -1,7 +1,4 @@
 body{
-    display:flex;
-    flex-direction:column;  
-    align-items:center;
     font-family: sans-serif;
     background-color: #4E220F;
     color:white;
@@ -10,8 +7,7 @@ body{
 div{
     display:flex;
     flex-direction:column;
-    justify-content:center;
-    align-items:center;
+    align-items:center; 
 }
 
 p{  
@@ -29,13 +25,13 @@ p{
     position: fixed;
     z-index: 99;
     top:0;
-    padding: 10px;
+    left:0;
+    padding:10px;
 }
 
-#pg1,#web,#chess,#music,#football{
-    height:800px;
+#pg1,#web,#chess,#music,#sports{
     display: flex;
-    align-content: space-between;
+    
 }
 
 #chlinks{
@@ -45,7 +41,7 @@ p{
 
 
 #chlinks>a{
-    margin: 0 20px;
+    border-width: 10px transparent;
     text-decoration: underline;
 }
 
@@ -58,4 +54,25 @@ a{
     font-size: 3.2vh;
     color: #9D6638;
     text-decoration: none;
+}
+
+#chlinks>a:hover{
+    border-color: rgb(190, 90, 7);
+}
+
+img{
+    width: 35%;
+}
+
+h1{
+    padding: 55px 0 0 0;
+    text-align: center;
+    font-size: 6vh; 
+}
+
+h2{
+    color: rgb(6, 185, 230);
+    text-decoration: underline;
+    background-color: #ff26006c;
+    padding: 10px;
 }
